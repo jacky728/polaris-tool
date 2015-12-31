@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/lblLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="142dp"
+        android:textColor="@android:color/white"
+        android:text="@string/longitude" />
+
+    <CheckBox
+        android:id="@+id/chkEquipLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txtLongitude"
+        android:layout_marginBottom="12dp"
+        android:layout_alignRight="@+id/eastOrWest"/>
+    
+    <EditText
+        android:id="@+id/txtLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblLongitude"
+        android:layout_alignBottom="@+id/lblLongitude"
+        android:layout_toRightOf="@+id/lblLongitude"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+    
+    <RadioGroup 
+        android:id="@+id/eastOrWest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/eastLongitude"
+        android:layout_alignLeft="@+id/txtLongitude"
+        android:layout_below="@+id/txtLongitude"
+        android:layout_marginTop="20dp">
+
+	    <RadioButton
+	        android:id="@+id/eastLongitude"
+	        android:textColor="@android:color/white"
+	        android:text="@string/east_longitude" />
+	
+	    <RadioButton
+	        android:id="@+id/westLongitude"
+	        android:layout_marginLeft="12dp"
+	        android:textColor="@android:color/white"
+	        android:text="@string/west_longitude" />
+        
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eastOrWest"
+        android:layout_below="@+id/eastOrWest"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOK"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/btnOK"
+        android:textColor="@android:color/white"
+        android:text="@string/cancel" />
+    
+</RelativeLayout>

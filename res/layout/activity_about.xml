@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".AboutActivity" >
+
+    <TextView
+        android:id="@+id/about_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/about_project_ver_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_app_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="@string/app_ver_date" />
+    
+    <TextView
+        android:id="@+id/about_project_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_project_ver_date"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:id="@+id/about_project_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/about_project_version"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:text="@string/project_by" />
+
+    <TextView
+        android:id="@+id/about_thanks_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_project_by"
+        android:layout_below="@+id/about_project_by"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/white"
+        android:text="@string/thanks_to" />
+
+    <TextView
+        android:id="@+id/abount_thanks_to_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_thanks_to"
+        android:layout_below="@+id/about_thanks_to"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:text="@string/thanks_to_1" />
+
+    <TextView
+        android:id="@+id/abount_thanks_to_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/abount_thanks_to_1"
+        android:layout_below="@+id/abount_thanks_to_1"
+        android:textColor="@android:color/white"
+        android:text="@string/thanks_to_2" />
+
+    <TextView
+        android:id="@+id/about_advice_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/abount_forum_id"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="@string/advice_to" />
+    
+    <TextView
+        android:id="@+id/abount_forum_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/abount_forum_site"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="@string/forum_id" />
+    
+    <TextView
+        android:id="@+id/abount_forum_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:text="@string/forum_site" />
+
+</RelativeLayout>

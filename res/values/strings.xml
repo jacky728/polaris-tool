@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">简易对极轴</string>
+    <string name="app_ver_date">Dec 24, 2012</string>
+    <string name="app_ver_prefix">ver</string>
+    <string name="title_activity_longitude">经度设置</string>
+    <string name="title_activity_about">关于</string>
+    <string name="quit_app">退出应用</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_latitude">设置经度</string>
+    <string name="menu_location_style_dec">以小数显示经纬度</string>
+    <string name="menu_location_style_deg">以时分显示经纬度</string>
+    <string name="menu_camera_orientation">取景器方向调整</string>
+    <string name="camera_focused">相机对焦中...</string>
+    <string name="camera_adjusted">相机方向已调整，您的取景器显示还正确吗？</string>
+    <string name="longitude">经度：</string>
+    <string name="latitude">纬度：</string>
+    <string name="use_gps_longitude">使用GPS获取经纬值</string>
+    <string name="use_equip_longitude">使用设备最近经纬值</string>
+    <string name="use_manual_longitude">使用手动经度设置</string>
+    <string name="switch_auto_prefix">切换到自动模式，当前</string>
+    <string name="east_longitude">东经</string>
+    <string name="west_longitude">西经</string>
+    <string name="fail_get_location">获取位置失败，请开启GPS或手动输入经度！</string>
+    <string name="prompt_gps_enabled">GPS启用成功，请等待GPS获取经纬值...</string>
+    <string name="prompt_gps_disabled">GPS关闭，请开启GPS或按MENU键手动输入经度值！</string>
+    <string name="prompt_location_changed">GPS获取位置成功，已更新经纬值</string>
+    <string name="prompt_location_changed_manual">GPS获取位置成功，请双击屏幕或按MENU键选择使用GPS！</string>
+    <string name="prompt_longitude">经度值必须为0到180之间的正浮点数！</string>
+    <string name="prompt_camera_orientation_confirmed">相机取景方向已调整并保存！</string>
+    <string name="confirm_quit">确认退出吗？</string>
+    <string name="project_by">Project by Jacky</string>
+    <string name="thanks_to">Thanks to</string>
+    <string name="thanks_to_1">wujingping (iOS版本)</string>
+    <string name="thanks_to_2">飞翔的帝国 (测试)</string>
+    <string name="advice_to">如有问题或建议请发送至：20144072@qq.com</string>
+    <string name="forum_id">牧夫天文论坛、天之文、天文家园ID：yjcoffee</string>
+    <string name="forum_site">http://www.astronomy.com.cn/bbs/thread-250156-1-1.html</string>
+    
+</resources>
