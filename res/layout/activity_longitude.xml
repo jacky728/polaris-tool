@@ -1,87 +1,100 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainView"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
-    tools:context=".MainActivity" >
-
-    <TextView
-        android:id="@+id/lblLongitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="142dp"
-        android:textColor="@android:color/white"
-        android:text="@string/longitude" />
+    tools:context=".MainActivity"
+    android:gravity="center_vertical"
+    android:paddingBottom="160dp">
 
     <CheckBox
-        android:id="@+id/chkEquipLongitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:layout_above="@+id/txtLongitude"
-        android:layout_marginBottom="12dp"
-        android:layout_alignRight="@+id/eastOrWest"/>
-    
-    <EditText
-        android:id="@+id/txtLongitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblLongitude"
-        android:layout_alignBottom="@+id/lblLongitude"
-        android:layout_toRightOf="@+id/lblLongitude"
-        android:layout_marginLeft="16dp"
-        android:inputType="numberDecimal"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"
-        android:ems="10">
-        <requestFocus />
-    </EditText>
-    
+            android:id="@+id/chkEquipLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_equip_longitude"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp">
+        <TextView
+                android:id="@+id/lblLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:textColor="@android:color/white"
+                android:text="@string/longitude" />
+
+        <EditText
+                android:id="@+id/txtLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:inputType="numberDecimal"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:ems="10">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+
     <RadioGroup 
         android:id="@+id/eastOrWest"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:checkedButton="@+id/eastLongitude"
-        android:layout_alignLeft="@+id/txtLongitude"
-        android:layout_below="@+id/txtLongitude"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp" android:gravity="center_horizontal" android:layout_marginRight="30dp">
 
 	    <RadioButton
-	        android:id="@+id/eastLongitude"
-	        android:textColor="@android:color/white"
-	        android:text="@string/east_longitude" />
-	
+                android:id="@+id/eastLongitude"
+                android:textColor="@android:color/white"
+                android:text="@string/east_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 	    <RadioButton
-	        android:id="@+id/westLongitude"
-	        android:layout_marginLeft="12dp"
-	        android:textColor="@android:color/white"
-	        android:text="@string/west_longitude" />
-        
+                android:id="@+id/westLongitude"
+                android:layout_marginLeft="12dp"
+                android:textColor="@android:color/white"
+                android:text="@string/west_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
     </RadioGroup>
-    
-    <Button
-        android:id="@+id/btnOK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/eastOrWest"
-        android:layout_below="@+id/eastOrWest"
-        android:layout_marginTop="30dp"
-        android:textColor="@android:color/white"
-        android:text="@string/ok" />
 
-    <Button
-        android:id="@+id/btnCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOK"
-        android:layout_marginLeft="12dp"
-        android:layout_toRightOf="@+id/btnOK"
-        android:textColor="@android:color/white"
-        android:text="@string/cancel" />
-    
-</RelativeLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/btnOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/ok" />
+
+        <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textColor="@android:color/white"
+                android:text="@string/cancel" />
+    </LinearLayout>
+
+
+</LinearLayout>
