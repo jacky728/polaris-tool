@@ -28,5 +28,6 @@ proguard/
 
 .classpath
 .project
+.svn/
 .idea/
 *.iml
